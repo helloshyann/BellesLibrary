@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Belle's Library | Shyann Jobe</title>
+    <meta name="description" content="Shyann Jobe">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/onestar.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link href="Content/Custom.css" rel="stylesheet" />
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #6C6FE5;
+            padding: 10px;
+        }
+
+        th {
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark banner-color static-top">
+        <div class="container">
+            <!-- logo image -->
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="Images/signature2.png" width="150" alt="Shyann Jobe" />
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Index.html">
+                            🌹 Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Solve.html">🌹 Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Code.html">🌹 Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//github.com/helloshyann" target="_blank">🌹 Git</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//shyann.netlify.app" target="_blank">🌹 Portfolio</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+
+    <div class="container">
+
+        <!--Page Title-->
+
+        <div class="row mb-1">
+            <div class="col text-center">
+                <h1 class="mt-5">Belle's 🌹 Library</h1>
+                <hr />
+
+                <button class="btn btn-default dropdown-toggle" type="button" id="bookDropDown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Literary Selection
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="bookDropDown">
+                    <button id="Alicebtn" class="dropdown-item" type="button" data-toggle="modal" data-target="#myModal">Alice In Wonderland</button>
+                    <button id="Harrybtn" class="dropdown-item" type="button" data-toggle="modal" data-target="#myModal">Harry Potter and the Sorcerer's Stone</button>
+                    <button id="Hobbitbtn" class="dropdown-item" type="button" data-toggle="modal" data-target="#myModal">The Fellowship of the Ring</button>
+                </div>
+            </div>
+        </div>
+
+
+        <hr />
+
+        <div class="card mb-5 pt-3 pb-3 pl-5 pr-5">
+            <div class="row">
+                <div class="col">
+                    <h4 class="alice text-center">Alice In Wonderland</h4>
+                    <hr />
+                    <p>
+                        Alice was beginning to get very tired of sitting by her sister on the
+                        bank, and of having nothing to do: once or twice she had peeped into
+                        the book her sister was reading, but it had no pictures or
+                        conversations in it, “and what is the use of a book,” thought Alice
+                        “without pictures or conversations?”
+                    </p>
+                    <p>
+                        So she was considering in her own mind (as well as she could, for the
+                        hot day made her feel very sleepy and stupid), whether the pleasure of
+                        making a daisy-chain would be worth the trouble of getting up and
+                        picking the daisies, when suddenly a White Rabbit with pink eyes ran
+                        close by her.
+                    </p>
+                </div>
+                <div class="col">
+                    <h2 class="harry text-center">Harry Potter</h2>                    
+                    <hr />
+                    <p>
+                        Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense.
+                    </p>
+                    <p>
+                        Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere.
+                    </p>
+                </div>
+                <div class="col">
+                    <h4 class="hobbit text-center">The Lord of The Rings</h4>
+                    <hr />
+                    <p>
+                        When Mr. Bilbo Baggins of Bag End announced that he would shortly be
+                        celebrating his eleventy-first birthday with a party of special magnificence,
+                        there was much talk and excitement in Hobbiton.
+                    </p>
+                    <p>
+                        Bilbo was very rich and very peculiar, and had been the wonder of the
+                        Shire for sixty years, ever since his remarkable disappearance and unexpected
+                        return. The riches he had brought back from his travels had now become a
+                        local legend, and it was popularly believed, whatever the old folk might say,
+                        that the Hill at Bag End was full of tunnels stuffed with treasure. And if that
+                        was not enough for fame, there was also his prolonged vigour to marvel at.
+                        Time wore on, but it seemed to have little effect on Mr. Baggins. At ninety he
+                        was much the same as at fifty. At ninety-nine they began to call him well-preserved; but unchanged would have been nearer the mark.
+                        There were some that shook their heads and thought this was too much of a good thing; it
+                        seemed unfair that anyone should possess (apparently) perpetual youth as
+                        well as (reputedly) inexhaustible wealth.
+                    </p>
+                    <p>
+                        ‘It will have to be paid for,’ they said. ‘It isn’t natural, and trouble will
+                        come of it!’
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Results Modal Pop Up-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h1>Results</h1>
+                        <p>
+                            The longest string of characters in your literary selection is<br />
+                            <div id="bookoutput"></div>
+                        </p>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="Scripts/confetti.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="Scripts/ShyannStarCoderEntry.js"></script>
+
+</body>
+</html>
