@@ -1,4 +1,4 @@
-<img src="/Images/BLwriting.png">
+<img src="/StarCoderChallenge/Images//BLwriting.png">
 
 # Finding The Longest String
 
