@@ -43,6 +43,38 @@ Bilbo was very rich and very peculiar, and had been the wonder of the Shire for 
 
 })
 
+document.getElementById("Peterbtn").addEventListener("click", function () {
+
+    const book4 = `All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this.
+                                    One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother.
+                                    I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried,
+                                    “Oh, why can't you remain like this for ever!” This was all that passed between them on the subject, but henceforth Wendy knew
+                                    that she must grow up. You always know after you are two. Two is the beginning of the end.`;
+
+    let search4 = longestWord(book4);
+
+    document.getElementById("bookoutput").innerHTML = search4;
+
+})
+
+document.getElementById("Wrinklebtn").addEventListener("click", function () {
+
+    const book5 = `It was a dark and stormy night. 
+In her attic bedroom Margaret Murry, wrapped in an old patchwork quilt, sat on the foot of her bed 
+and watched the trees tossing in the frenzied lashing of the wind. Behind the trees clouds scudded 
+frantically across the sky. Every few moments the moon ripped through them, creating wraithlike 
+shadows that raced along the ground. 
+The house shook. 
+Wrapped in her quilt, Meg shook. 
+She wasn’t usually afraid of weather. —It’s not just the weather, she thought. —It’s the weather on 
+top of everything else. On top of me. On top of Meg Murry doing everything wrong.`;
+
+    let search5 = longestWord(book5);
+
+    document.getElementById("bookoutput").innerHTML = search5;
+
+})
+
 function longestWord(text) {
     confetti.start(1000);
     let bookSplit = text.split(' ')
