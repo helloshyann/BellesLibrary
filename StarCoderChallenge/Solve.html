@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--Custom CSS-->
     <link href="Content/Custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <style>
         table {
             border-collapse: collapse;
@@ -83,9 +84,11 @@
                 <h1 class="mt-5">Belle's 🌹 Library</h1>
                 <hr />
                 <p class="lead">Finding The Longest String</p>
-                <p>Select a book and print out the <b>longest word</b> from each book.
-                This application is intended to find the longest array of characters from a string (without including whitespace) and return the answer to the user.
-                <br />This program was made using JavaScript, jQuery, HTML, CSS, and Bootstrap 4.</p>
+                <p>
+                    Select a book and print out the <b>longest word</b> from each book.
+                    This application is intended to find the longest array of characters from a string (without including whitespace) and return the answer to the user.
+                    <br />This program was made using JavaScript, jQuery, HTML, CSS, and Bootstrap 4.
+                </p>
 
                 <hr />
 
@@ -105,86 +108,111 @@
 
         <hr />
 
-        <div class="card mb-5 pt-3 pb-3 pl-5 pr-5">
-            <div class="row">
-                <div class="col">
-                    <h4 class="alice text-center">Alice In Wonderland</h4>
-                    <hr />
+        <div class="container">
+            <section id="books">
+                <div class="container">
+                    <div class="row">
+                        <div class="slider owl-carousel">
+
+                            <!-- ALICE -->
+                            <div class="card mb-5">
+                                <div class="card-header">
+                                    <h3 class="alice text-center">Alice In Wonderland</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Alice was beginning to get very tired of sitting by her sister on the
+                                        bank, and of having nothing to do: once or twice she had peeped into
+                                        the book her sister was reading, but it had no pictures or
+                                        conversations in it, “and what is the use of a book,” thought Alice
+                                        “without pictures or conversations?”
+                                    </p>
+                                    <p>
+                                        So she was considering in her own mind (as well as she could, for the
+                                        hot day made her feel very sleepy and stupid), whether the pleasure of
+                                        making a daisy-chain would be worth the trouble of getting up and
+                                        picking the daisies, when suddenly a White Rabbit with pink eyes ran
+                                        close by her.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- HARRY POTTER -->
+                            <div class="card mb-5">
+                                <div class="card-header">
+                                    <h2 class="harry text-center">Harry Potter and the Sorcerer's Stone</h2>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense.
+                                    </p>
+                                    <p>
+                                        Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- LORD OF RINGS -->
+                            <div class="card mb-5">
+                                <div class="card-header">
+                                    <h4 class="hobbit text-center">The Fellowship of The Ring</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        When Mr. Bilbo Baggins of Bag End announced that he would shortly be
+                                        celebrating his eleventy-first birthday with a party of special magnificence,
+                                        there was much talk and excitement in Hobbiton.
+                                    </p>
+                                    <p>
+                                        Bilbo was very rich and very peculiar, and had been the wonder of the
+                                        Shire for sixty years, ever since his remarkable disappearance and unexpected
+                                        return. The riches he had brought back from his travels had now become a
+                                        local legend, and it was popularly believed, whatever the old folk might say,
+                                        that the Hill at Bag End was full of tunnels stuffed with treasure. And if that
+                                        was not enough for fame, there was also his prolonged vigour to marvel at.
+                                        Time wore on, but it seemed to have little effect on Mr. Baggins. At ninety he
+                                        was much the same as at fifty. At ninety-nine they began to call him well-preserved; but unchanged would have been nearer the mark.
+                                        There were some that shook their heads and thought this was too much of a good thing; it
+                                        seemed unfair that anyone should possess (apparently) perpetual youth as
+                                        well as (reputedly) inexhaustible wealth.
+                                    </p>
+                                    <p>
+                                        ‘It will have to be paid for,’ they said. ‘It isn’t natural, and trouble will
+                                        come of it!’
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+    <!--Results Modal Pop Up-->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body text-center">
+                    <h1>Results</h1>
                     <p>
-                        Alice was beginning to get very tired of sitting by her sister on the
-                        bank, and of having nothing to do: once or twice she had peeped into
-                        the book her sister was reading, but it had no pictures or
-                        conversations in it, “and what is the use of a book,” thought Alice
-                        “without pictures or conversations?”
-                    </p>
-                    <p>
-                        So she was considering in her own mind (as well as she could, for the
-                        hot day made her feel very sleepy and stupid), whether the pleasure of
-                        making a daisy-chain would be worth the trouble of getting up and
-                        picking the daisies, when suddenly a White Rabbit with pink eyes ran
-                        close by her.
+                        The longest string of characters in your literary selection is<br />
+                        <div id="bookoutput"></div>
                     </p>
                 </div>
-                <div class="col">
-                    <h2 class="harry text-center">Harry Potter</h2>
-                    <hr />
-                    <p>
-                        Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense.
-                    </p>
-                    <p>
-                        Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere.
-                    </p>
-                </div>
-                <div class="col">
-                    <h4 class="hobbit text-center">The Lord of The Rings</h4>
-                    <hr />
-                    <p>
-                        When Mr. Bilbo Baggins of Bag End announced that he would shortly be
-                        celebrating his eleventy-first birthday with a party of special magnificence,
-                        there was much talk and excitement in Hobbiton.
-                    </p>
-                    <p>
-                        Bilbo was very rich and very peculiar, and had been the wonder of the
-                        Shire for sixty years, ever since his remarkable disappearance and unexpected
-                        return. The riches he had brought back from his travels had now become a
-                        local legend, and it was popularly believed, whatever the old folk might say,
-                        that the Hill at Bag End was full of tunnels stuffed with treasure. And if that
-                        was not enough for fame, there was also his prolonged vigour to marvel at.
-                        Time wore on, but it seemed to have little effect on Mr. Baggins. At ninety he
-                        was much the same as at fifty. At ninety-nine they began to call him well-preserved; but unchanged would have been nearer the mark.
-                        There were some that shook their heads and thought this was too much of a good thing; it
-                        seemed unfair that anyone should possess (apparently) perpetual youth as
-                        well as (reputedly) inexhaustible wealth.
-                    </p>
-                    <p>
-                        ‘It will have to be paid for,’ they said. ‘It isn’t natural, and trouble will
-                        come of it!’
-                    </p>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-
-
-        <!--Results Modal Pop Up-->
-        <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">×</button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <h1>Results</h1>
-                        <p>
-                            The longest string of characters in your literary selection is<br />
-                            <div id="bookoutput"></div>
-                        </p>
-                    </div>
-                    <div class="modal-footer text-center">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -194,6 +222,15 @@
     <script src="Scripts/confetti.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="Scripts/ShyannStarCoderEntry.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            items: 1,
+            margin: 10
+        });</script>
 </body>
 </html>
